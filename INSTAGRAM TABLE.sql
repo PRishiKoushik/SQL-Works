@@ -1,11 +1,54 @@
-use sql_works;
-create table facebook (
-first_name varchar(89),
-last_name varchar(90),
-age int
+use bakery;
+show tables;
+drop table tobedeleted;
+drop table tobedeleted2;
+drop table tobedeleted3;
+create  table icecream(
+brands varchar(20),flavours varchar(90),quantity int
 );
-desc facebook;
-select * from INSTAGRAM;
+desc icecream;
+insert into icecream(brands,flavours,quantity)
+values('quality walls','venela',60);
+select * from icecream;
+insert into icecream(brands,flavours,quantity)
+values('amul','butterscotch',70),('scoops','chocolate',45);
+select * From icecream;
+create table Debts(
+name varchar(60),Topay int
+);
+desc debts;
+create table Debts2(
+name varchar(60)not null,Topay int default 99
+);
+desc Debts2;
+insert into Debts2(name)
+values(KOUSHIK);
+SELECT * FROM Debts2;
+desc debts2;
+insert into debts2(name)
+values(koushik);
+select * from debts2;
+CReate table debts(
+name varchar(90)not null default 'paid',topay int not null default 0
+);
+desc debts;
+Create table debts(
+name varchar(90) default 'NO Name',topay int not null default 0
+);
+insert into debts(name,topay)
+values('koushik',25),('kalyan',80);
+select * from debts;
+Create table debts(
+name varchar(90) default 'NO Name',topay int not null default 0
+);
+insert into debts(topay)
+values(25),(80);
+select * From debts;
+insert into debts(name)
+values('kalyan'),('kouhsik');
+select * fRom debts;
+
+
 
 
 
